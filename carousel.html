@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./lib/bootstrap.min.css">
+  <title>Bootstrap - Carousel</title>
+</head>
+<body>
+
+  <div class="container">
+    <div id="carousel-exemplo" class="carousel carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div data-bs-interval="3000" class="carousel-item active">
+          <img class="d-block w-100" src="https://pixabay.com/get/g24b3b82589906bb316f46bd222a544e734932e5f14088348596577322bbfa5e85812f6fac5d0a42443de6e6f30cdcd679e9a21c9a1fc436fbbb92c763c7f9948170adf357050ab7335e934271c360818_640.jpg" alt="carro formula 1">
+        </div>
+      </div>
+      <div data-bs-interval="3000" class="carousel-item">
+        <img class="d-block w-100" src="https://pixabay.com/get/g07160b9ade6c4e18f6a2652338da8e789168330a5fa0dac8c90caa5d5fba8a036e4c68ae907143ec9f6fef7774d8c97477006bb5cd3b8bd0553c844b3cf06cd177dc9e0854544a02d1e50f9185f17cf0_640.jpg" alt="Outro carro">
+      </div>
+      <div class="carousel-caption">
+        <h2>Foto de um carro</h2>
+      </div>
+      <div data-bs-interval="3000" class="carousel-item">
+        <img class="d-block w-100" src="https://pixabay.com/get/gbd72e1adf5083a6772ba38e7a4ecd6961ae08e7a1d8743da76a3b8297ce60389461aec893df5f6e676fe0e7446e894e13810e3ba8fd439055aa065d3bcaed3c4106b5baa22769b50f2817d9a84ce63ab_640.jpg" alt="carro correndo">
+      </div>
+      <div class="carousel-caption">
+        <h2>Outro carro</h2>
+      </div>
+      <button data-bs-slide="prev" data-bs-target="#carousel-exemplo" class="carousel-control-prev" type="button">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button data-bs-slide="next" data-bs-target="#carousel-exemplo" class="carousel-control-next" type="button">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./lib/bootstrap.bundle.min.js"></script>
+</html>

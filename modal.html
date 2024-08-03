@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./lib/bootstrap.min.css">
+  <title>Modal</title>
+</head>
+<body>
+  <button data-bs-toggle="modal" class="btn btn-success" data-bs-target="#exemplo-modal">
+    Abrir modal
+  </button>
+  <div  class="modal" id="exemplo-modal" data-bs-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Título da modal</h5>
+          <button data-bs-dismiss="modal" class="btn-close"></button>
+        </div>
+        <div class="modal-body modal-body-flex">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ad aspernatur vitae consequatur et recusandae similique tenetur hic vel delectus ipsa minima, quisquam culpa, sapiente quod? Ab rerum deserunt suscipit.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+          <button class="btn btn-success" data-bs-dismiss="modal">Confirmar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./lib/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      const modalExemplo = new bootstrap.Modal('#exemplo-modal');
+      
+      setTimeout(function(){
+        modalExemplo.show();
+      }, 2000)
+    })
+  </script>
+</body>
+</html>
